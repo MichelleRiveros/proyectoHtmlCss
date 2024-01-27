@@ -104,6 +104,7 @@ section .content{
 
 /* Segunda seccion de la pagina */
 
+
 section .content2{
     display: flex;
     width: 100%;
@@ -159,21 +160,67 @@ section .content2{
 }
 
 
+/*Tercera seccion de la pagina (CARDS)*/
 
 
+section .content3{
+    margin-top: 90px;
+}
 
 
+section .content3 .encabezado{
+    width: 100%;
+    height: 100%;
+}
+
+.content3 .encabezado h3{
+    text-align: center;
+    color:#ff702a;
+    font-size: 30px;
+}
+
+.content3 .encabezado h2{
+    text-align: center;
+    color:white;
+    font-size: 55px;
+}
+
+section .content3 .cards{ 
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .imagen{
+    justify-content: center;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.content3 .cards .card1{
+    background: #ffefe8;
+}
+
+.content3 .cards .card2{
+    background: #ffefe8;
+}
+
+.content3 .cards .card3{
+    background: #ffefe8;
+}
+
+.content3 .cards .contentido{
+    text-align: center;
+}
+
+.content3 .cards .contentido h5{
+    color:#ff702a;
+}
 
 
-
-
-
-
-
-
-
-
-
+/* Cuarta seccion de la pagina*/
 
 
 
