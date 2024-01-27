@@ -44,17 +44,62 @@ nav .container{
 }
 
 
+/*Primera Seccion de la pagina*/
 
 
+section{
+    width: 100%;
+    height: 90vh;
+}
 
+section .content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.content .main-content{
+    max-width: 650px; /*limita el ancho máximo de un elemento a 600 píxeles. Si el contenido dentro del elemento es más estrecho que 600 píxeles, el elemento conservará su ancho original; pero si el contenido es más ancho, el elemento se ajustará automáticamente a 600 píxeles como máximo.*/
+    width: 100%;
+    margin-left: 12%;
+}
 
+.content .main-content h1{
+    color:  #ff702a;
+    font-size: 100px
+}
 
+.content .main-content h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
 
+.main-content .order{
+    display: flex;
+    width: 100%;
+    min-height: 5vh;
+    margin-top: 35px;
+}
 
+.order button{
+    min-width: 25%;
+    border: none;
+    background: #ff702a;
+    color: white;
+    font-size: 20px;
+    transition: 0.1s linear;
+}
 
+.content .imagen{
+    margin-right: 15%;
+}
 
-
+.content .imagen img{
+    max-width: 700px;
+    filter: drop-shadow(-10px -10px 200px #f74f10);
+}
 
 
 
