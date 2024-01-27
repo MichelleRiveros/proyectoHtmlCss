@@ -1,76 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    padding: 0;
+    padding: 0x;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-
 body{
     background: #1e1d2b;
 }
 
-nav{
-    width: 100%;
-    height: 10vh;  /* "viewport height": Esto significa que el elemento tendrá una altura que será el 10% de la altura total del área visible en el navegador en ese momento.*/
-    top: 60px;
-    left: 0;
-    background: red;
-}
-
-.container{
-    width: 100%;
-    height: 100%;
+nav .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 30px; 
+    justify-content: space-between; 
 }
 
-.header {
-    background: blue;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    max-width: 1024px; /*establece el ancho máximo de un elemento en una página web en 1024 píxeles.*/
+.container .logo{
+    margin-left: 6.5%;
+    font-size: 56px;
+    color: #ff702a;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-ul li a {
-    padding: 0 16px;
-    color: white;
-}
-
-p {
-    color:#ff702a;
-    margin: 0;
-}
-
-.logo{
+.container .links{
     display: flex;
     align-items: center;
+    margin-right: 5%;
+    gap: 30px;
+}
+
+.container .links a{
+    font-size: 25px;
+    color:white;
     text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
+    cursor: pointer; /*se utiliza para cambiar la apariencia del cursor del ratón cuando se sitúa sobre un elemento en una página web.*/
+    transition: 0.3s linear;   
 }
 
-nav .lista{
-    background: #2c2b47 ;
-    padding-left: 46%;
-    width: 100%; /*especificar el ancho de un elemento como un porcentaje del ancho de su contenedor principal*/
-    height: 25%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-    font-size: 20px;
-    transform: translateX(-200%);
+.links a:hover{ /*Esto selecciona los enlaces (<a>) que están dentro de elementos con la clase .links y que están en estado de "hover", es decir, cuando el cursor del ratón se sitúa sobre ellos.*/
+    color: #ff702a; /*Esto establece el color del texto de los enlaces en estado de "hover" */
+    width: 100%; /*Esto significa que cuando el usuario pasa el cursor sobre un enlace dentro de un elemento con la clase .links, el ancho del enlace se extenderá para ocupar todo el ancho disponible dentro de su contenedor padre.*/
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+    .content{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .main-content{
+        margin: 0 10px;
+    }
+}
+
+
+
+
+@media (min-width:768px){   
+    .content .image img{
+        min-width: 500px;
+    }
+
+    .logo{
+        margin-left: none;
+    }
+
+    .boton{
+        display: none;
+    }
+
+}
+
+@media (max-width:576px){
+    .links{
+        display: none;
+    }
+
+    .content .image img{
+        width: 100%;
+        margin-right: none;
+    }
+
+    .search i{
+        display: none;
+    }
+}
