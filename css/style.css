@@ -219,8 +219,142 @@ section .content3 .cards{
     color:#ff702a;
 }
 
-
 /* Cuarta seccion de la pagina*/
+
+
+section .content4{
+    margin-top: 90px;
+    text-align: center;
+}
+
+
+section .content4 .encabezado{
+    width: 100%;
+    height: 100%;
+}
+
+.content4 .encabezado h3{
+    text-align: center;
+    color:#ff702a;
+    font-size: 30px;
+}
+
+.content4 .encabezado h2{
+    text-align: center;
+    color:white;
+    font-size: 55px;
+}
+
+section .content4 .cards{ 
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards .imagen{
+    justify-content: center;
+    padding-left: 35px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.content4 .cards .contentido{
+    text-align: center;
+}
+
+.content4 .cards .contentido h3{
+    color:#ff702a;
+    margin-bottom: 10px;
+}
+
+.content4 .cards .contentido h4{
+    color: white;
+}
+
+
+/* Quinta seccion de la pagina*/
+
+
+section .content5{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content5 .main-content{
+    background: #ffefe8;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+}
+
+.main-content .boton{
+    display: flex;
+    width: 100%;
+    min-height: 5vh;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.boton button{
+    min-width: 25%;
+    border: none;
+    background: #ff702a;
+    color: white;
+    font-size: 20px;
+    transition: 0.1s linear;
+}
+
+
+/*Sexta seccion de la pagina*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
