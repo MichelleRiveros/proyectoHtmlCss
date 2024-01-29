@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
-    padding: 0x;
+    padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -294,7 +292,6 @@ section .content5{
     width: 70%;
     height: 40%;
     text-align: center;
-    margin-bottom: 8%;
     font-size: 30px;
 }
 
@@ -327,52 +324,53 @@ section .content5{
     color:azure;
 }
 
-.containerDeLosItems h2{
-    text-align: center;
-}
 
 .item1 ul{
     list-style: none;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding-left: 0%;
 }
 
 .containerDeLosItems .item2{
     color:azure;
-    
 }
 
 .item2 ul{
     list-style: none;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding-left:0%;
 }
 
 .containerDeLosItems .item3{
-    color:azure;
-    
+    color:azure; 
 }
 
 .item3 ul{
     list-style: none;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: start;
+    padding-left:0%;
 }
 
 .containerDeLosItems .item4{
-    
     color:azure;
-    
 }
 
 .item4 ul{
-    
-    list-style: none;
     display: flex;
-    flex-direction: column
+    padding-left:0%;
 }
 
-
+.containerDeLosItems .lineaNaranjita{
+    background:  #ff702a;
+    width: 50%;
+    height: 5px;
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
 
 
 
