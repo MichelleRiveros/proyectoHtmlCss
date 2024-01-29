@@ -185,39 +185,47 @@ section .content3 .encabezado{
     font-size: 55px;
 }
 
-section .content3 .cards{ 
-    margin-top: 80px;
-    width: 100%;
-    height: 100%;
+.menu{
     display: flex;
-    justify-content: space-around;
-}
-
-.cards .imagen{
     justify-content: center;
-    padding-left: 35px;
-    padding-top: 10px;
+    align-items: center;
+    padding: 0% 15%;
+    gap: 100px;
+    height: 600px;
 }
 
-.content3 .cards .card1{
-    background: #ffefe8;
-}
-
-.content3 .cards .card2{
-    background: #ffefe8;
-}
-
-.content3 .cards .card3{
-    background: #ffefe8;
-}
-
-.content3 .cards .contentido{
+.menu .cards {
+    background-color: #ffefe8;
+    height: 350px;
+    width: 300px;
+    gap: 100px;
     text-align: center;
+    position: relative;
+
 }
 
-.content3 .cards .contentido h5{
-    color:#ff702a;
+.menu .cards p {
+    color: #ff702a;
 }
+
+.menu .cards h4,
+h5 {
+    color: #1e1d2b;
+}
+
+.cards img {
+    height: 280px;
+}
+
+.cuadrado{
+    background-color: #ff702a;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}   
+
 
 /* Cuarta seccion de la pagina*/
 
@@ -268,29 +276,26 @@ section .content4 .cards{
 .content4 .cards .contentido h3{
     color:#ff702a;
     margin-bottom: 10px;
+    font-size: 30px;
 }
 
 .content4 .cards .contentido h4{
     color: white;
+    font-size: 20px;
 }
 
 
 /* Quinta seccion de la pagina*/
 
-
 section .content5{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.content5 .main-content{
+    padding-top: 90px;
+    margin-left: 15%;
     background: #ffefe8;
-    width: 80%;
-    height: 50%;
+    width: 70%;
+    height: 40%;
     text-align: center;
+    margin-bottom: 8%;
+    font-size: 30px;
 }
 
 .main-content .boton{
@@ -310,98 +315,144 @@ section .content5{
     transition: 0.1s linear;
 }
 
+.containerDeLosItems{
+    display: flex;
+    margin: 15%;
+    justify-content: space-between;
+    margin-bottom: 100%;
+    font-size: 20px;
+}
 
-/*Sexta seccion de la pagina*/
+.containerDeLosItems .item1{
+    color:azure;
+}
 
+.containerDeLosItems h2{
+    text-align: center;
+}
 
+.item1 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column
+}
 
+.containerDeLosItems .item2{
+    color:azure;
+    
+}
 
+.item2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column
+}
 
+.containerDeLosItems .item3{
+    color:azure;
+    
+}
 
+.item3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column
+}
 
+.containerDeLosItems .item4{
+    
+    color:azure;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:900px){
-    .content{
-        display: flex;
-        width: 100%;
-        flex-direction: column-reverse;
-    }
-
-    .main-content{
-        margin: 0 10px;
-    }
+.item4 ul{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: column
 }
 
 
 
 
-@media (min-width:768px){   
-    .content .image img{
-        min-width: 500px;
-    }
 
-    .logo{
-        margin-left: none;
-    }
 
-    .boton{
-        display: none;
-    }
 
-}
 
-@media (max-width:576px){
-    .links{
-        display: none;
-    }
 
-    .content .image img{
-        width: 100%;
-        margin-right: none;
-    }
 
-    .search i{
-        display: none;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
