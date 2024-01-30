@@ -1,6 +1,121 @@
 
 
 
+.content .main-content h1 {
+    font-size: 60px;
+}
+
+.content .main-content h2 {
+    font-size: 30px;
+}
+
+.content .main-content .order button {
+    
+}
+
+.content .imagen img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 0;
+}
+
+.content2 .main-content {
+    margin-right: 5%;
+}
+
+.content2 .main-content h2 {
+    font-size: 40px;
+}
+
+.content2 .main-content .about {
+    font-size: 20px;
+}
+
+.content2 .main-content h3 {
+    font-size: 20px;
+}
+
+.content3 .menu {
+    padding: 0 5%;
+}
+
+.content4 .encabezado h2,
+.content4 .encabezado h3 {
+    font-size: 25px;
+}
+
+.content4 .cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.content5 {
+    margin-left: 5%;
+    width: 90%;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.containerDeLosItems {
+    flex-direction: column;
+    margin: 5%;
+}
+
+.containerDeLosItems .item1,
+.containerDeLosItems .item2,
+.containerDeLosItems .item3,
+.containerDeLosItems .item4 {
+    margin-bottom: 20px;
+}
+
+.containerDeLosItems .lineaNaranjita {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -215,7 +330,100 @@ section .content5{
 
 
 
+nav .container .links{
+    display: none;  
+}
 
+.content{
+    margin-top: 10%;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.content .main-content h1{
+    color:  #ff702a;
+    font-size: 70px;
+    background: #1e1d2b;
+}
+
+.content .main-content h2{
+    color: white;
+    font-size: 30px;
+}
+
+.main-content .order{
+    justify-content: center;
+}
+
+.content .imagen{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.content .imagen img{
+    max-width: 400px;
+    filter: drop-shadow(-10px -10px 200px #f74f10);
+}
+
+.content2{
+    margin-top: 10%;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column-reverse; 
+    
+}
+
+.content2 .main-content{
+    text-align: center;
+    background: red;
+}
+
+.content2 .main-content .about{
+    color:  #ff702a;
+    font-size: 25px;
+}
+
+.content2 .main-content h2{
+    color:  white;
+    font-size: 45px
+}
+
+.content2 .main-content h3{
+    color: white;
+    font-size: 20px;
+}
+
+.content2 .imagen img{
+    max-width: 400px;
+    filter: drop-shadow(-10px -10px 200px #f74f10);
+}
+
+.content3 .menu{
+    flex-direction: column;
+    background: red;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content4 .cards{
+    flex-direction: column;
+
+}
+
+
+
+
+
+}
 
 
 
@@ -358,4 +566,103 @@ nav.active{
     margin-right: 100px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .logo{
+    color: #ff702a;
+}
+
+.container .links{
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    gap: 30px;
+}
+
+.container .links a{
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+    cursor: pointer; /*se utiliza para cambiar la apariencia del cursor del ratón cuando se sitúa sobre un elemento en una página web.*/
+    transition: 0.3s linear;   
+}
+
+.links a:hover{ /*Esto selecciona los enlaces (<a>) que están dentro de elementos con la clase .links y que están en estado de "hover", es decir, cuando el cursor del ratón se sitúa sobre ellos.*/
+    color: #ff702a; /*Esto establece el color del texto de los enlaces en estado de "hover" */
+    width: 100%; /*Esto significa que cuando el usuario pasa el cursor sobre un enlace dentro de un elemento con la clase .links, el ancho del enlace se extenderá para ocupar todo el ancho disponible dentro de su contenedor padre.*/
+}
+
+
+/*Primera Seccion de la pagina*/
+
+section{
+    width: 100%;
+    height: 90vh;
+}
+
+section .content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .main-content{
+    max-width: 650px; /*limita el ancho máximo de un elemento a 600 píxeles. Si el contenido dentro del elemento es más estrecho que 600 píxeles, el elemento conservará su ancho original; pero si el contenido es más ancho, el elemento se ajustará automáticamente a 600 píxeles como máximo.*/
+    width: 100%;
+    margin-left: 12%;
+}
+
+.content .main-content h1{
+    color:  #ff702a;
+    font-size: 100px
+}
+
+.content .main-content h2{
+    color: white;
+    font-size: 40px;
+}
+
+.main-content .order{
+    display: flex;
+    width: 100%;
+    min-height: 5vh;
+    margin-top: 35px;
+}
+
+.order button{
+    min-width: 25%;
+    border: none;
+    background: #ff702a;
+    color: white;
+    font-size: 20px;
+    transition: 0.1s linear;
+}
+
+.content .imagen{
+    margin-right: 15%;
+}
+
+.content .imagen img{
+    max-width: 700px;
+    filter: drop-shadow(-10px -10px 200px #f74f10);
+}
 

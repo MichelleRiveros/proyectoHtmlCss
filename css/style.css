@@ -1,8 +1,8 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 body{
@@ -10,22 +10,16 @@ body{
 }
 
 nav .container{
+    height: 100px;
+    padding: 0px 50px;
     display: flex;
-    margin-top: 30px; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container .logo{
-    margin-left: 6.5%;
-    font-size: 56px;
+    font-size: 35px;
     color: #ff702a;
-}
-
-.container .links{
-    display: flex;
-    align-items: center;
-    margin-right: 5%;
-    gap: 30px;
 }
 
 .container .links a{
@@ -33,7 +27,8 @@ nav .container{
     color:white;
     text-decoration: none;
     cursor: pointer; /*se utiliza para cambiar la apariencia del cursor del ratón cuando se sitúa sobre un elemento en una página web.*/
-    transition: 0.3s linear;   
+    transition: 0.3s linear; 
+    padding: 0px 15px;  
 }
 
 .links a:hover{ /*Esto selecciona los enlaces (<a>) que están dentro de elementos con la clase .links y que están en estado de "hover", es decir, cuando el cursor del ratón se sitúa sobre ellos.*/
@@ -42,12 +37,35 @@ nav .container{
 }
 
 
+/* Menu RESPONSIVE*/
+
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.esconder-menu {
+    position: absolute;
+}
+
+
+#check {
+    display: none;
+}
+
+
 /*Primera Seccion de la pagina*/
 
 
-section{
-    width: 100%;
-    height: 90vh;
+#home{
+    height: 800px;
 }
 
 section .content{
@@ -70,7 +88,7 @@ section .content{
 }
 
 .content .main-content h2{
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 40px;
 }
 
@@ -95,8 +113,8 @@ section .content{
 }
 
 .content .imagen img{
-    max-width: 700px;
-    filter: drop-shadow(-10px -10px 200px #f74f10);
+    max-width: 600px;
+    filter: drop-shadow(-5px -5px 100px #f74f10);
 }
 
 
@@ -105,21 +123,19 @@ section .content{
 
 section .content2{
     display: flex;
-    width: 100%;
-    height: 100%;
+    height: 800px;
+    padding: 0% 15%;
     justify-content: space-between;
     align-items: center;
 }
 
 .content2 .main-content{
     max-width: 650px; /*limita el ancho máximo de un elemento a 600 píxeles. Si el contenido dentro del elemento es más estrecho que 600 píxeles, el elemento conservará su ancho original; pero si el contenido es más ancho, el elemento se ajustará automáticamente a 600 píxeles como máximo.*/
-    width: 100%;
-    margin-right: 15%;
 }
 
 .content2 .main-content .about{
     color:  #ff702a;
-    font-size: 30px
+    font-size: 30px;
 }
 
 .content2 .main-content h2{
@@ -128,7 +144,7 @@ section .content2{
 }
 
 .content2 .main-content h3{
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 30px;
 }
 
@@ -148,13 +164,10 @@ section .content2{
     transition: 0.1s linear;
 }
 
-.content2 .imagen{
-    margin-left: 15%;
-}
 
 .content2 .imagen img{
     max-width: 700px;
-    filter: drop-shadow(-10px -10px 200px #f74f10);
+    filter: drop-shadow(-5px -5px 100px #f74f10);
 }
 
 
@@ -162,13 +175,12 @@ section .content2{
 
 
 section .content3{
-    margin-top: 90px;
+    margin-top: 30px;
+    height: 750px;
 }
 
-
 section .content3 .encabezado{
-    width: 100%;
-    height: 100%;
+    width: 100%;  
 }
 
 .content3 .encabezado h3{
@@ -229,14 +241,8 @@ h5 {
 
 
 section .content4{
-    margin-top: 90px;
-    text-align: center;
-}
-
-
-section .content4 .encabezado{
-    width: 100%;
-    height: 100%;
+    margin-top: 10px;
+    height: 750px;
 }
 
 .content4 .encabezado h3{
@@ -251,21 +257,14 @@ section .content4 .encabezado{
     font-size: 55px;
 }
 
-section .content4 .cards{ 
-    margin-top: 80px;
-    width: 100%;
-    height: 100%;
+.content4 .cards{ 
+    margin-top: 50px;
+    padding: 0% 15%;
+    height: 550px;
     display: flex;
-    justify-content: space-around;
-}
-
-.cards .imagen{
     justify-content: center;
-    padding-left: 35px;
-    padding-top: 10px;
-    text-align: center;
+    gap: 100px;
 }
-
 
 .content4 .cards .contentido{
     text-align: center;
@@ -285,14 +284,22 @@ section .content4 .cards{
 
 /* Quinta seccion de la pagina*/
 
-section .content5{
-    padding-top: 90px;
-    margin-left: 15%;
-    background: #ffefe8;
+
+.content5 .main-content {
+    padding: 30px;
+    margin: 0 15%;
     width: 70%;
     height: 40%;
-    text-align: center;
     font-size: 30px;
+    background: #ffefe8;
+}
+
+
+section .content5{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    
 }
 
 .main-content .boton{
@@ -314,38 +321,25 @@ section .content5{
 
 .containerDeLosItems{
     display: flex;
-    margin: 15%;
+    margin: 5% 15%;
     justify-content: space-between;
-    margin-bottom: 100%;
     font-size: 20px;
 }
 
-.containerDeLosItems .item1{
-    color:azure;
-}
-
-
-.item1 ul{
+.item1 ul, .item2 ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     padding-left: 0%;
 }
 
-.containerDeLosItems .item2{
-    color:azure;
+.containerDeLosItems .item1,
+.containerDeLosItems .item2, 
+.containerDeLosItems .item3,
+.containerDeLosItems .item4{
+    color:white;
 }
 
-.item2 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding-left:0%;
-}
-
-.containerDeLosItems .item3{
-    color:azure; 
-}
 
 .item3 ul{
     list-style: none;
@@ -355,9 +349,6 @@ section .content5{
     padding-left:0%;
 }
 
-.containerDeLosItems .item4{
-    color:azure;
-}
 
 .item4 ul{
     display: flex;
@@ -371,6 +362,121 @@ section .content5{
     margin-bottom: 7%;
     margin-top: 5%;
 }
+
+
+/*RESPONSIVE*/
+
+
+@media(max-width: 768px){
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+        color: #ff702a;
+    }
+
+    
+    .links {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #1e1d2b;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .links a {
+        display: block;
+        padding: 20px;
+
+    }
+
+
+    /* SECCION 1*/
+
+    section .content{
+        justify-content:unset;
+        flex-direction: column;
+        text-align: center;
+        height: 550px;
+    }
+
+    .content .main-content{
+        margin: 0;
+    }
+   
+    .content .main-content h1{
+        font-size: 50px;
+    }
+
+    .content .main-content h2{
+        font-size: 30px;
+    }
+
+    .content .main-content .order{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content .main-content .order button{
+        font-size: 15px;
+    }
+
+    .content .imagen, .content2 .imagen{
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .content .imagen img, .content2 .imagen img{
+        width: 75%;
+    }
+
+
+    /* SECCION 2*/
+
+
+    section .content2{
+        flex-direction: column-reverse;
+        background: red;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
