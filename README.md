@@ -9,3 +9,7 @@ En resumen, la creación de una página de comida rápida ofrece una serie de be
 Para la realizacion de la pagina se implemento solamente flex, la maquetacion se realizo a base de div, nav y section como etiquetas contenedoras, las clases se manejaron con nombres espeficicos haciendo alucion a que era lo que contenian dentro de ellos.   
 
 **evidencias:** 
+
+!['Computadora'](https://github.com/MichelleRiveros/proyectoHtmlCss/blob/main/storage/demo/comptador.gif)
+
+!['Celular'](https://github.com/MichelleRiveros/proyectoHtmlCss/blob/main/storage/demo/responsive.gif)
