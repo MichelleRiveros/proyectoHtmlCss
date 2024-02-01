@@ -64,11 +64,8 @@ nav .container{
 /*Primera Seccion de la pagina*/
 
 
-#home{
-    height: 800px;
-}
-
 section .content{
+    margin-top: 6%;
     display: flex;
     width: 100%;
     height: 100%;
@@ -206,12 +203,10 @@ section .content3 .encabezado{
 
 .menu .cards {
     background-color: #ffefe8;
-    height: 350px;
+    height: 50%;
     width: 300px;
-    gap: 100px;
     text-align: center;
     position: relative;
-
 }
 
 .menu .cards p {
@@ -224,7 +219,7 @@ h5 {
 }
 
 .cards img {
-    height: 280px;
+    width: 60%;
 }
 
 .cuadrado{
@@ -233,7 +228,7 @@ h5 {
     width: 40px;
     position: absolute;
     top: 0px;
-    right: 20px;
+    right: 5px;
 }   
 
 
@@ -243,6 +238,8 @@ h5 {
 section .content4{
     margin-top: 10px;
     height: 750px;
+    text-align: center;
+
 }
 
 .content4 .encabezado h3{
@@ -258,17 +255,24 @@ section .content4{
 }
 
 .content4 .cards{ 
-    margin-top: 50px;
+    margin-top: 8%;
     padding: 0% 15%;
-    height: 550px;
+    height: 450px;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 100px;   
 }
 
 .content4 .cards .contentido{
     text-align: center;
 }
+
+.content4 .cards img{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 
 .content4 .cards .contentido h3{
     color:#ff702a;
@@ -358,7 +362,7 @@ section .content5{
 .containerDeLosItems .lineaNaranjita{
     background:  #ff702a;
     width: 50%;
-    height: 5px;
+    height: 2px;
     margin-bottom: 7%;
     margin-top: 5%;
 }
@@ -367,7 +371,7 @@ section .content5{
 /*RESPONSIVE*/
 
 
-@media(max-width: 768px){
+@media(max-width: 460px){
 
     .mostrar-menu,
     .esconder-menu {
@@ -376,7 +380,7 @@ section .content5{
     }
 
     
-    .links {
+    nav .container .links {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -389,24 +393,42 @@ section .content5{
         transition: 0.8s;
     }
 
-    .links a {
+    nav .container .links a {
         display: block;
         padding: 20px;
 
     }
 
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+
+    #check:checked~.links {
+        right: 0;
+    }
+
+
+
+
+
+
 
     /* SECCION 1*/
 
-    section .content{
+    section .content, 
+    section .content2{
         justify-content:unset;
         flex-direction: column;
         text-align: center;
-        height: 550px;
+        height: 500px;
     }
 
     .content .main-content{
         margin: 0;
+
     }
    
     .content .main-content h1{
@@ -417,25 +439,36 @@ section .content5{
         font-size: 30px;
     }
 
-    .content .main-content .order{
+    .content .main-content .order,
+    .content2 .main-content .order{
         margin-top: 20px;
         margin-bottom: 20px;
         justify-content: center;
         text-align: center;
     }
 
-    .content .main-content .order button{
+    .content .main-content .order button,
+    .content2 .main-content .order button,
+    .content5 .main-content .order button{
         font-size: 15px;
     }
 
-    .content .imagen, .content2 .imagen{
-        width: 100%;
+    section .content .imagen, section .content2 .imagen{
+        width: 90vw;
         margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .imagen{
+        margin-right: 0%;
     }
 
 
-    .content .imagen img, .content2 .imagen img{
-        width: 75%;
+    .content .imagen img{
+        margin-top: 10px;
+        width: 60vw;
     }
 
 
@@ -444,16 +477,130 @@ section .content5{
 
     section .content2{
         flex-direction: column-reverse;
-        background: red;
+    }
+
+    .content2 .main-content .about,
+    .content3 .encabezado h3,
+    .content4 .encabezado h3{
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .content2 .imagen img{
+        width: 60vw;
     }
 
 
+    .content2 .main-content h2{
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .content2 .main-content h3{
+        font-size: 14px;
+        text-align: center;
+    }
 
 
+    /* SECCION 3*/
 
 
+    section .content3{
+        height: 0%;
+        margin-top: 25%;
+    }
+
+    .content3 .encabezado h2{
+        font-size: 25px;
+    }
+
+    .content3 .menu,
+    .content4 .cards{
+        margin-top: 20px;
+        flex-direction: column;
+        height: 0%; 
+        gap: 60px;
+    }
+
+    .content3 .menu .cards{
+        width: 90%;
+        height: 100%;
+    }
+
+    .content3 .menu .cards img{
+        width: 40%;
+    }
 
 
+   /* SECCION 4*/
+
+   section .content4{
+    margin-top: 15%;
+    height: 0%;
+   }
+
+
+   .content4 .encabezado h2{
+    font-size: 30px;
+   }
+
+   .content4 .cards .card1 h3,
+   .content4 .cards .card2 h3,
+   .content4 .cards .card3 h3{
+    font-size: 20px;
+    margin-top: 10%;
+   }
+
+
+   section .content4 .cards .card1 h4,
+   section .content4 .cards .card2 h4,
+   section .content4 .cards .card3 h4{
+    font-size: 15px;
+   }
+
+
+   /* SECCION 5*/
+
+
+   .content5 .main-content{
+    margin-top: 15%;
+    font-size: 14px;
+    width: 85%;
+    margin-right: 50%;
+    margin-bottom: 20%;
+   }
+
+   .content4 .cards .contentido h4{
+    font-size: 20px;
+    }
+
+
+    .content5 {
+        margin-right: 10%;
+        padding-right: 12%;
+        width: 80%;
+    }
+
+
+      /* SECCION 6*/
+
+    .containerDeLosItems {
+        flex-direction: column;
+        margin: 5%;
+    }
+    
+    .containerDeLosItems .item1,
+    .containerDeLosItems .item2,
+    .containerDeLosItems .item3,
+    .containerDeLosItems .item4 {
+        margin-bottom: 20px;
+    }
+    
+    .containerDeLosItems .lineaNaranjita {
+        width: 20%;
+    }
 }
 
 
