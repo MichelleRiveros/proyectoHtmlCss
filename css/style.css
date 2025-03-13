@@ -18,7 +18,7 @@ nav .container{
 }
 
 .container .logo{
-    font-size: 35px;
+    font-size: 25px;
     color: #ff702a;
 }
 
@@ -60,12 +60,12 @@ nav .container{
     display: none;
 }
 
-
 /*Primera Seccion de la pagina*/
 
 
 section .content{
     margin-top: 6%;
+    margin-bottom: 13%;
     display: flex;
     width: 100%;
     height: 100%;
@@ -76,17 +76,23 @@ section .content{
 .content .main-content{
     max-width: 650px; /*limita el ancho máximo de un elemento a 600 píxeles. Si el contenido dentro del elemento es más estrecho que 600 píxeles, el elemento conservará su ancho original; pero si el contenido es más ancho, el elemento se ajustará automáticamente a 600 píxeles como máximo.*/
     width: 100%;
+    background: #1e1d2b;
     margin-left: 12%;
+    margin-right: 3%;
+    justify-items: center;
 }
 
-.content .main-content h1{
-    color:  #ff702a;
-    font-size: 100px
-}
 
 .content .main-content h2{
-    color: white;
+    color:  #ff702a;
     font-size: 40px;
+}
+
+.content .main-content p{
+    margin-top: 5%;
+    color: white;
+    font-size: 15px;
+
 }
 
 .main-content .order{
@@ -107,11 +113,11 @@ section .content{
 }
 
 .content .imagen{
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .content .imagen img{
-    max-width: 600px;
+    max-width: 500px;
     filter: drop-shadow(-5px -5px 100px #f74f10);
 }
 
@@ -121,7 +127,7 @@ section .content{
 
 section .content2{
     display: flex;
-    height: 800px;
+    height: 450px;
     padding: 0% 15%;
     justify-content: space-between;
     align-items: center;
@@ -173,8 +179,8 @@ section .content2{
 
 
 section .content3{
-    margin-top: 30px;
-    height: 750px;
+    margin-top: 20px;
+    height: 500px;
 }
 
 section .content3 .encabezado{
@@ -184,7 +190,7 @@ section .content3 .encabezado{
 .content3 .encabezado h3{
     text-align: center;
     color:#ff702a;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .content3 .encabezado h2{
@@ -204,14 +210,18 @@ section .content3 .encabezado{
 
 .menu .cards {
     background-color: #ffefe8;
-    height: 50%;
+    height: 60%;
     width: 300px;
     text-align: center;
+    align-content: center;
     position: relative;
 }
 
 .menu .cards p {
     color: #ff702a;
+    font-size: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .menu .cards h4,
@@ -237,26 +247,24 @@ h5 {
 
 
 section .content4{
-    margin-top: 10px;
-    height: 750px;
+    margin-top: 3%;
+    height: 20%;
     text-align: center;
-
 }
 
 .content4 .encabezado h3{
     text-align: center;
     color:#ff702a;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .content4 .encabezado h2{
     text-align: center;
     color:white;
-    font-size: 55px;
 }
 
 .content4 .cards{ 
-    margin-top: 8%;
+    margin-top: 1%;
     padding: 0% 15%;
     height: 450px;
     display: flex;
@@ -264,26 +272,50 @@ section .content4{
     gap: 100px;   
 }
 
+.content4 .cards .card1{
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 15px;
+}
+
+.content4 .cards .card2{
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 15px;
+}
+
+.content4 .cards .card3{
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 15px;
+}
+
 .content4 .cards .contentido{
+    margin-top: 2%;
     text-align: center;
 }
 
-.content4 .cards img{
+.content4 .cards .card1 img{
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 
 .content4 .cards .contentido h3{
     color:#ff702a;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .content4 .cards .contentido h4{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -301,6 +333,7 @@ section .content4{
 
 
 section .content5{
+    margin-top: 10%;
     width: 100%;
     height: 40%;
     text-align: center;
@@ -325,10 +358,16 @@ section .content5{
 }
 
 .containerDeLosItems{
+    background: #1e1d2b;
     display: flex;
-    margin: 5% 15%;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 20px;
+    padding-bottom: 2%;
+}
+
+.containerDeLosItems .item1, 
+.containerDeLosItems .item2{
+    margin-top: 2%;
 }
 
 .item1 ul, .item2 ul{
@@ -343,6 +382,7 @@ section .content5{
 .containerDeLosItems .item3,
 .containerDeLosItems .item4{
     color:white;
+    font-size: 80%;
 }
 
 
@@ -366,6 +406,59 @@ section .content5{
     height: 2px;
     margin-bottom: 7%;
     margin-top: 5%;
+}
+
+/* Octava seccion de la pagina*/
+
+
+section .content8{
+    margin-top: 15%;
+    background: #0b112767;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    
+}
+
+.content8 .main-content {
+    padding: 30px;
+    width: 100%;
+    height: 40%;
+    font-size: 30px;
+}
+
+
+section .content8 h2{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 80%;
+    color: #f74f10;
+    
+}
+
+section .content8 p{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 50%;
+    color: #ffffff;
+    
+}
+
+.main-content .boton{
+    display: flex;
+    width: 100%;
+    min-height: 5vh;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.boton button{
+    min-width: 25%;
+    border: none;
+    background: #ff702a;
+    color: white;
+    font-size: 20px;
+    transition: 0.1s linear;
 }
 
 
@@ -411,6 +504,32 @@ section .content5{
         right: 0;
     }
 
+
+       /* SECCION 1 UNI*/
+
+   section .content8{
+    margin-top: 15%;
+    height: 0%;
+   }
+
+
+   .content8 .encabezado h2{
+    font-size: 30px;
+   }
+
+   .content8 .cards .card1 h3,
+   .content8 .cards .card2 h3,
+   .content8 .cards .card3 h3{
+    font-size: 20px;
+    margin-top: 10%;
+   }
+
+
+   section .content8 .cards .card1 h4,
+   section .content8 .cards .card2 h4,
+   section .content8 .cards .card3 h4{
+    font-size: 15px;
+   }
 
 
 
@@ -482,7 +601,8 @@ section .content5{
 
     .content2 .main-content .about,
     .content3 .encabezado h3,
-    .content4 .encabezado h3{
+    .content4 .encabezado h3
+    .content8 .encabezado h3{
         font-size: 15px;
         text-align: center;
         margin-bottom: 5px;
@@ -518,7 +638,8 @@ section .content5{
     }
 
     .content3 .menu,
-    .content4 .cards{
+    .content4 .cards
+    .content8 .cards{
         margin-top: 20px;
         flex-direction: column;
         height: 0%; 
@@ -573,7 +694,8 @@ section .content5{
     margin-bottom: 20%;
    }
 
-   .content4 .cards .contentido h4{
+   .content4 .cards .contentido h4
+   .content8 .cards .contentido h4{
     font-size: 20px;
     }
 
